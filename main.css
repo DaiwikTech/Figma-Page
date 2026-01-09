@@ -1,0 +1,118 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#hero {
+    background: #5F93C0;
+    max-width: 100%;
+    min-height: 810px;
+    padding-top: 20px;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    position: relative;
+    max-width: 100%;
+    padding: 18.63px 19.99px 18.37px 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px 20px;
+    border-radius: 22px;
+    background: #FFF;
+}
+
+#acuitylogo {
+    width: 168px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.options {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18.76px;
+
+}
+
+#Scheduling {
+    color: #FFF;
+    font-family: Inter;
+    display: flex;
+    height: 30%;
+    margin-top: 8px;
+    padding: 12px 23.56px 12px 24px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 12px;
+    background: #283849;
+}
+
+#nav-options {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+#mainmoto {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 37.188px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    margin-top: 70px;
+}
+
+#details {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15.875px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+#whitescheduling {
+    max-width: 100px;
+    border-radius: 12px;
+    background-color: #FFF;
+    padding: 12px 23.56px 12px 24px;
+    margin: 30px auto 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        min-height: 90px;
+        gap: 20px;
+    }
+
+    #nav-options {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 500px) {
+
+    #nav-options {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    header {
+        padding: 20px;
+        height: 100%;
+    }
+}
