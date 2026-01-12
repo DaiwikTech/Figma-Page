@@ -1,7 +1,7 @@
 body {
     margin: 0px;
     padding: 0px;
-    
+
 }
 
 #hero {
@@ -123,23 +123,38 @@ figure img {
 }
 
 footer {
+    background-color: aqua;
     margin: 50px 10px 20px;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    padding: 40px;
+    align-items: flex-start;
+    position: relative;
 }
 
 footer section {
     display: flex;
+    padding-right: 423.9px;
     justify-content: space-between;
-    padding: 50px 20px;
-    background-color: #ffffff;
-    gap: 00px;
+    align-items: flex-start;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
+
+#frontsite-footer_language {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 194.59px;
+}
 
 #lang {
     display: flex;
     color: #FFF;
     font-size: 20px;
-    max-height: 30px;
+    max-height: 25px;
     min-width: 100px;
     height: 44px;
     padding: 13px 25px 12.6px 25px;
@@ -156,41 +171,48 @@ footer section {
     max-width: 20px;
 }
 
-footer {
-    width: 100%;
-    background-color: #ffffff;
-    margin-top: 50px;
+
+#footeracuitylogo {
+    width: 168px;
+    height: 31px;
+    flex-shrink: 0;
 }
 
-footer section {
+#frontsite-footer_autogap {
     display: flex;
+    padding-right: 423.9px;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 60px 5%;
-    flex-wrap: wrap;
-    gap: 40px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
-#lang {
+.footer-link-title {
     display: flex;
-    align-items: center;
+    padding-right: 88.82px;
     justify-content: space-between;
-    background: #283849;
-    color: #FFF;
-    border-radius: 12px;
-    padding: 10px 20px;
-    height: 44px;
-    min-width: 110px;
-    font-family: Inter;
-    font-size: 16px;
-    cursor: pointer;
+    align-items: center;
 }
 
-#lang #langim {
-    width: 12px;
-    height: auto;
-    margin-left: 10px;
+.frontsite-footer_nav {
+    display: flex;
+    /* min-width: 100px; */
+    padding-bottom: 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30.99px;
+    min-width: 200px;
 }
+
+.footer-links {
+    display: flex;
+    padding-right: 5.23px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+}
+
 
 
 @media (max-width: 768px) {
