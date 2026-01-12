@@ -7,9 +7,12 @@ body {
 #hero {
     background: #5F93C0;
     max-width: 100%;
-    min-height: 850px;
-    padding-top: 20px;
+    min-height: clamp(700px, 60vh, 1000px); /* min, dynamic, max */
+    padding-top: clamp(20px, 3vw, 60px);
+    overflow: hidden; /* ensures overflowing images are cut */
 }
+
+
 
 header {
     display: flex;
@@ -95,19 +98,22 @@ header {
 
 figure {
     display: flex;
-    width: 100%;
-    margin: 60px 0 0;
-    gap: 16px;
-    overflow: hidden;
+    justify-content: center;
+    gap: clamp(20px, 2vw, 40px);
+    margin-top: clamp(40px, 5vw, 80px);
+    padding: 0 10vw; /* ensures first/last image bleed outside */
+    overflow: visible; /* so images can extend past padding */
 }
 
+/* Hero images */
 figure img {
-    height: 224.23px;
-    width: 400px;
+    width: clamp(360px, 22vw, 500px); /* min bigger so first/last bleed */
+    height: clamp(200px, 13vw, 280px);
     flex-shrink: 0;
     object-fit: cover;
     border-radius: 12px;
 }
+
 
 #play {
     display: flex;
@@ -219,6 +225,13 @@ footer section {
 
 .footer-links li {
     white-space: nowrap;
+}
+
+@media (min-width: 1600px)
+{
+    footer section {
+        padding-right: clamp(428.9px, 26vw, 30vw);
+    }
 }
 
 @media (max-width: 1600px) {
